@@ -1,0 +1,159 @@
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header and footer styling */
+header, footer {
+    flex: 1;
+    background: #1c1c1c;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main layout */
+main {
+    flex: 14;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+/* Navigation styles */
+nav {
+    background: #333;
+    color: #fff;
+    flex: 1;
+    padding: 20px;
+    min-width: 200px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #444;
+}
+
+/* Section styling */
+section {
+    flex: 7;
+    padding: 20px;
+}
+
+/* Table styling */
+section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+section table th,
+section table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+section table tr:nth-child(odd) {
+    background: #e8e8e8;
+}
+
+section table tr:hover {
+    background: #dcdcdc;
+}
+
+/* Form styling */
+form {
+    background: #f5f5f5;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form p {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Form field templates */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus,
+form textarea:focus {
+    border-color: #777;
+    outline: none;
+}
+
+form input[type="submit"],
+form button {
+    background: #333;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+form input[type="submit"]:hover,
+form button:hover {
+    background: #555;
+}
+
+/* Header link styling */
+header a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+/* Footer text styling */
+footer {
+    font-size: 0.9em;
+}
+
+/* Utility classes for spacing */
+.mt-20 { margin-top: 20px; }
+.mb-20 { margin-bottom: 20px; }
+
